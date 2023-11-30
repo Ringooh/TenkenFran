@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+  <title>Character UI</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>Character UI</h1>
+  <!-- Character information -->
+  <p><strong>Имя:</strong> Фран</p>
+  <p><strong>Возраст:</strong> 12</p>
+  <p><strong>Раса:</strong> Зверолюд, племя черных кошек</p>
+  <p><strong>Класс:</strong> Нету</p>
+  <!-- Attributes -->
+  <h2>Характеристики</h2>
+  <p class="attribute">Уровень: <span id="level">3</span></p>
+  <p class="attribute">HP: <span id="hp">29</span></p>
+  <p class="attribute">MP: <span id="mp">17</span></p>
+  <p class="attribute">Сила: <span id="Сила">13</span></p>
+  <p class="attribute">Выносливость: <span id="Выносливость">10</span></p>
+  <p class="attribute">Ловкость: <span id="Ловкость">16</span></p>
+  <p class="attribute">Интеллект: <span id="Интеллект">8</span></p>
+  <p class="attribute">Магия: <span id="Магия">7</span></p>
+  <p class="attribute">Проворность: <span id="Проворность">15</span></p>
+  <!-- Skills -->
+  <h2>Навыки</h2>
+  <ul>
+    <li>Скрытность: 3</li>
+    <li>Дворцовый этикет: 4</li>
+    <li>Ощущение присутствия: 3</li>
+    <li>Искусство меча: 4</li>
+    <li>Мастерство меча: 6</li>
+    <li>Стремительный шаг: 4</li>
+    <li>Ночное зрение</li>
+    <li>Психическая устойчивость</li>
+    <li>Искусный резчик</li>
+    <li>Чувство направления</li>
+    <li>Убийца гоблинов</li>
+    <li>
+      <div class="tooltip">Убийца
+        <span class="tooltiptext">Ловкость +10. Получите навыки и психологическую
+          устойчивость.</span>
+      </div>
+    </li>
+  </ul>
+  <!-- Titles -->
+  <h2>Титулы</h2>
+  <ul>
+    <li>Закаленный в боях</li>
+    <li>Король распада</li>
+    <li>Эксперт по разборке</li>
+    <li>Коллекционер умений</li>
+    <li>Маг целитель</li>
+    <li>
+      <div class="tooltip">Убийца гоблинов
+        <span class="tooltiptext">Убейте более 100 гоблинов в одной битве.
+          Эффекты: Открывает навык "Убийца гоблинов".</span>
+      </div>
+    </li>
+    <li>
+      <div class="tooltip">Убийца
+        <span class="tooltiptext">Титул, присваиваемые тем, кто на одном поле боя унес 100
+          жизней.
+          Эффект: Ловкость +10. Получите навыки и психологическую устойчивость.</span>
+      </div>
+    </li>
+    <li>Маг огня</li>
+    <li>Мастер-повар</li>
+    <li>
+      <div class="tooltip">Унийца насекомых
+        <span class="tooltiptext">Насекомые-монстры на одном поле битвы
+          Титул присваивается тем, кто победил 300 и более животных
+          Эффект: получение навыка "Убийца насекомых"</span>
+      </div>
+    </li>
+    <li>
+      <div class="tooltip">Супер большой едок
+        <span class="tooltiptext">Бросить вызов и победить чрезвычайно сильного противника в одиночку
+          Титул присвоенный человеку
+          Эффект: увеличивает Жизни HP на 20, все характеристики на 5, немного увеличивает скорость роста навыков
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="tooltip">Покоритель подземелий
+        <span class="tooltiptext">Убейте Мастера подземелья или уничтожьте ядро подземелья
+          Титул присвоенный за уничтожение ядра поздемелья
+          Эффект: Увеличивает регенерацию жизни и маны во время нахождения в подземелье
+        </span>
+      </div>
+    </li>
+    <li>
+      <div class="tooltip">Убийца демонов
+        <span class="tooltiptext">Титул присваивается человеку, победивший демона
+          Эффект: Получение навыка "Убийца демонов"
+        </span>
+      </div>
+    </li>
+
+    <li>Тысяча: Эффекты HP: +20, Сила: +20, Выносливость: +20</li>
+
+  </ul>
+  <!-- Button to change character's level -->
+  <button onclick="changeLevel()">Изменить уровень</button>
+</body>
+
+</html>
