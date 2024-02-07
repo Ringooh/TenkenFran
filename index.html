@@ -1,31 +1,53 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Character UI</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Description goes here" />
+  <meta name="keywords" content="Discord Bot, Fran, Aobuta, Anime" />
+  <meta name="author" content="Shouko#4908" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FF69B4" />
+  <meta property="og:url" content="https://github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A multifunctional Discord Bot - revolving around Hu Tao. Offers anime query, anime scheduler, leveling system, moderation system, and more!" />
+  <meta property="og:image" content="https://ringooh.github.io/hutao-san/src/images/1626365443087.png" />
+  <meta property="og:site_name" content="github.io" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:domain" content="github.io" />
+  <meta property="twitter:url" content="https://github.io/" />
+  <meta name="twitter:title" content="Hu Tao | Discord Bot" />
+  <meta name="twitter:description" content="A multifunctional Discord Bot - revolving around Hu Tao. Offers anime query, anime scheduler, leveling system, moderation system, and more!" />
+  <meta name="twitter:image" content="https://ringooh.github.io/hutao-san/src/images/1626365443087.png" />
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/emojis/818570188587794442.png?v=1" />
+  <link rel="stylesheet" href="./src/css/main.css" />
+  <link rel="stylesheet" href="./src/css/index.css" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="assets/waifu.css" />
+  <link rel="stylesheet" type=text/css href="assets/waifu.min.css?v=1.4.2">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./src/javascript/main.js"></script>
-  <link rel="stylesheet" href="./src/css/styles.css" />
+  <title>Character UI | Fran</title>
 </head>
 
 <body>
-  <h1>Character UI</h1>
+  <!-- <h1>Character UI</h1> -->
   <!-- Character information -->
   <p><strong>Имя:</strong> Фран</p>
   <p><strong>Возраст:</strong> 12</p>
   <p><strong>Раса:</strong> Зверолюд, племя черных кошек</p>
   <p><strong>Класс:</strong> Нету</p>
+  <p class="rang">Ранг: <span id="number"> </span></p>
   <!-- Attributes -->
   <h2>Характеристики</h2>
   <p class="attribute">Уровень: <span id="level">3</span></p>
   <p class="attribute">HP: <span id="hp">29</span></p>
   <p class="attribute">MP: <span id="mp">17</span></p>
-  <p class="attribute">Сила: <span id="Сила">13</span></p>
-  <p class="attribute">Выносливость: <span id="Выносливость">10</span></p>
-  <p class="attribute">Ловкость: <span id="Ловкость">16</span></p>
-  <p class="attribute">Интеллект: <span id="Интеллект">8</span></p>
-  <p class="attribute">Магия: <span id="Магия">7</span></p>
+  <p class="attribute">Сила: <span id="strange">13</span></p>
+  <p class="attribute">Выносливость: <span id="vitality">10</span></p>
+  <p class="attribute">Ловкость: <span id="dexterity">16</span></p>
+  <p class="attribute">Интеллект: <span id="intelligence">8</span></p>
+  <p class="attribute">Магия: <span id="magic">7</span></p>
   <p class="attribute">Проворность: <span id="Проворность">15</span></p>
   <!-- Skills -->
   <h2>Навыки</h2>
@@ -108,7 +130,6 @@
         </span>
       </div>
     </li>
-
   </ul>
   <!-- Button to change character's level -->
   <button onclick="changeLevel()">Изменить уровень</button>
