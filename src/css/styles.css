@@ -1,12 +1,13 @@
+
+
 /* Character UI styles */
 .attribute {
   font-weight: bold;
   margin-top: 10px;
-  font-size: 16px
 }
 
-body {
-  background-image: url("../images/.jpg");
+.body {
+  background-image: url("../images/hutao.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,19 +15,26 @@ body {
   background-blend-mode: overlay;
 }
 
+#titles li.active {
+  color: green;
+}
+
+/***
 .tooltip {
+  
+}
+***/
+
+.tooltip .tooltiptext {
   position: relative;
   display: inline-block;
   font-size: 16px;
-}
-
-.tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
   color: #fff;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 5px 0;
 
   /* Position the tooltip */
