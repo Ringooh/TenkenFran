@@ -11,7 +11,8 @@ var levelRanks = [
   { levelRange: [45, 54], rank: "C" },
   { levelRange: [55, 64], rank: "B" },
   { levelRange: [65, 74], rank: "A" },
-  { levelRange: [75, 99], rank: "S" }
+  { levelRange: [75, 99], rank: "S" },
+  { levelRange: [100, 9999], rank: "SS" }
 ];
 
 /**
@@ -96,7 +97,7 @@ function changeLevel() {
      * 
      * Обновляйте атрибуты независимо от повышения или понижения уровня.
     **/
-    var attributes = ['strange', 'vitality', 'dexterity', 'intelligence', 'magic', 'Проворность'];
+    var attributes = ['strange', 'vitality', 'dexterity', 'intelligence', 'magic', 'agility'];
     for (var i = 0; i < attributes.length; i++) {
       var attribute = attributes[i];
       /** 
