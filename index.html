@@ -3,136 +3,120 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Description goes here" />
-  <meta name="keywords" content="Discord Bot, Fran, Aobuta, Anime" />
-  <meta name="author" content="Shouko#4908" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#FF69B4" />
-  <meta property="og:url" content="https://github.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="A multifunctional Discord Bot - revolving around Hu Tao. Offers anime query, anime scheduler, leveling system, moderation system, and more!" />
-  <meta property="og:image" content="https://ringooh.github.io/hutao-san/src/images/1626365443087.png" />
-  <meta property="og:site_name" content="github.io" />
-  <meta name="twitter:card" content="summary" />
-  <meta property="twitter:domain" content="github.io" />
-  <meta property="twitter:url" content="https://github.io/" />
-  <meta name="twitter:title" content="Hu Tao | Discord Bot" />
-  <meta name="twitter:description" content="A multifunctional Discord Bot - revolving around Hu Tao. Offers anime query, anime scheduler, leveling system, moderation system, and more!" />
-  <meta name="twitter:image" content="https://ringooh.github.io/hutao-san/src/images/1626365443087.png" />
-  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/emojis/818570188587794442.png?v=1" />
   <link rel="stylesheet" href="./src/css/main.css" />
   <link rel="stylesheet" href="./src/css/index.css" />
-  <link rel="stylesheet" href="./src/css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="assets/waifu.css" />
-  <link rel="stylesheet" type=text/css href="assets/waifu.min.css?v=1.4.2">
+  <link rel="stylesheet" href="./src/css/styles.css" />  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./src/javascript/main.js"></script>
+  <script src="./src/javascript/index.js"></script>
   <title>Character UI | Fran</title>
 </head>
 
 <body>
   <!-- <h1>Character UI</h1> -->
   <!-- Character information -->
-  <p><strong>Имя:</strong> Фран</p>
-  <p><strong>Возраст:</strong> 12</p>
-  <p><strong>Раса:</strong> Зверолюд, племя черных кошек</p>
-  <p><strong>Класс:</strong> Нету</p>
-  <p class="rang">Ранг: <span id="number"> </span></p>
+  <div><strong>Имя:</strong> Фран</div>
+  <div><strong>Возраст:</strong> 12</div>
+  <div><strong>Раса:</strong> Зверолюд, племя чёрных кошек</div>
+  <div><strong>Класс:</strong> Нету</div>
+  <div class="rang">Ранг: <span id="number"> </span></div>
   <!-- Attributes -->
   <h2>Характеристики</h2>
-  <p class="attribute">Уровень: <span id="level">3</span></p>
-  <p class="attribute">HP: <span id="hp">29</span></p>
-  <p class="attribute">MP: <span id="mp">17</span></p>
-  <p class="attribute">Сила: <span id="strange">13</span></p>
-  <p class="attribute">Выносливость: <span id="vitality">10</span></p>
-  <p class="attribute">Ловкость: <span id="dexterity">16</span></p>
-  <p class="attribute">Интеллект: <span id="intelligence">8</span></p>
-  <p class="attribute">Магия: <span id="magic">7</span></p>
-  <p class="attribute">Проворность: <span id="Проворность">15</span></p>
+  <div class="attribute">Уровень: <span id="level">3</span></div>
+  <div class="attribute">HP: <span id="hp">29</span></div>
+  <div class="attribute">MP: <span id="mp">17</span></div>
+  <div class="attribute">Сила: <span id="strange">13</span></div>
+  <div class="attribute">Выносливость: <span id="vitality">10</span></div>
+  <div class="attribute">Ловкость: <span id="dexterity">16</span></div>
+  <div class="attribute">Интеллект: <span id="intelligence">8</span></div>
+  <div class="attribute">Магия: <span id="magic">7</span></div>
+  <div class="attribute">Проворность: <span id="agility">15</span></div>
   <!-- Skills -->
   <h2>Навыки</h2>
-  <ul>
-    <li>Скрытность: 3</li>
-    <li>Дворцовый этикет: 4</li>
-    <li>Ощущение присутствия: 3</li>
-    <li>Искусство меча: 4</li>
-    <li>Мастерство меча: 6</li>
-    <li>Стремительный шаг: 4</li>
-    <li>Ночное зрение</li>
-    <li>Психическая устойчивость</li>
-    <li>Искусный резчик</li>
-    <li>Чувство направления</li>
-    <li>Убийца гоблинов</li>
-    <li>
+  <div>
+    <div>Скрытность: 3</div>
+    <div>Дворцовый этикет: 4</div>
+    <div>Ощущение присутствия: 3</div>
+    <div>Искусство меча: 4</div>
+    <div>Мастерство меча: 6</div>
+    <div>Стремительный шаг: 4</div>
+    <div>Ночное зрение</div>
+    <div>Психическая устойчивость</div>
+    <div>Искусный резчик</div>
+    <div>Чувство направления</div>
+    <div>Убийца гоблинов</div>
+    <div>
       <div class="tooltip">Убийца
         <span class="tooltiptext">Ловкость +10. Получите навыки и психологическую
           устойчивость.</span>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
   <!-- Titles -->
   <h2>Титулы</h2>
-  <ul>
-    <li>Закаленный в боях</li>
-    <li>Король распада</li>
-    <li>Эксперт по разборке</li>
-    <li>Коллекционер умений</li>
-    <li>Маг целитель</li>
-    <li>
+  <div>
+    <div>Закаленный в боях</div>
+    <div>Король распада</div>
+    <div>Эксперт по разборке</div>
+    <div>Коллекционер умений</div>
+    <div>Маг целитель</div>
+    <div>
       <div class="tooltip">Убийца гоблинов
         <span class="tooltiptext">Убейте более 100 гоблинов в одной битве.
           Эффекты: Открывает навык "Убийца гоблинов".</span>
       </div>
-    </li>
-    <li>
+    </div>
+    <div>
       <div class="tooltip">Убийца
         <span class="tooltiptext">Титул, присваиваемые тем, кто на одном поле боя унес 100
           жизней.
           Эффект: Ловкость +10. Получите навыки и психологическую устойчивость.</span>
       </div>
-    </li>
-    <li>Маг огня</li>
-    <li>Мастер-повар</li>
-    <li>
+    </div>
+    <div>Маг огня</div>
+    <div>Мастер-повар</div>
+    <div>
       <div class="tooltip">Унийца насекомых
         <span class="tooltiptext">Насекомые-монстры на одном поле битвы
           Титул присваивается тем, кто победил 300 и более животных
           Эффект: получение навыка "Убийца насекомых"</span>
       </div>
-    </li>
-    <li>
+    </div>
+    <div>
       <div class="tooltip">Супер большой едок
         <span class="tooltiptext">Бросить вызов и победить чрезвычайно сильного противника в одиночку
           Титул присвоенный человеку
           Эффект: увеличивает Жизни HP на 20, все характеристики на 5, немного увеличивает скорость роста навыков
         </span>
       </div>
-    </li>
-    <li>
+    </div>
+    <div>
       <div class="tooltip">Покоритель подземелий
         <span class="tooltiptext">Убейте Мастера подземелья или уничтожьте ядро подземелья
           Титул присвоенный за уничтожение ядра поздемелья
           Эффект: Увеличивает регенерацию жизни и маны во время нахождения в подземелье
         </span>
       </div>
-    </li>
-    <li>
+    </div>
+    <div>
       <div class="tooltip">Убийца демонов
         <span class="tooltiptext">Титул присваивается человеку, победивший демона
           Эффект: Получение навыка "Убийца демонов"
         </span>
       </div>
-    </li>
-
-    <li>
+    </div>
+    <div>
       <div class="tooltip">Тысяча
         <span class="tooltiptext">Эффекты HP: +20, Сила: +20, Выносливость: +20
         </span>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
   <!-- Button to change character's level -->
-  <button onclick="changeLevel()">Изменить уровень</button>
+  <a class="main-button-link"> 
+  <div class="link-button"><button onclick="changeLevel()">Изменить уровень</button></div>
+  </div>
+</a>
 </body>
 
 </html>
